@@ -1,0 +1,59 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity C4M1P2 is
+    Port (
+        SW : in  STD_LOGIC_VECTOR (3 downto 0);  -- 4位输入，二进制数V
+        HEX1 : out STD_LOGIC_VECTOR (6 downto 0);  -- 十进制高位显示
+        HEX0 : out STD_LOGIC_VECTOR (6 downto 0)   -- 十进制低位显示
+    );
+end C4M1P2;
+
+architecture Behavioral of C4M1P2 is
+
+    -- 定义信号
+    signal z : STD_LOGIC;
+    signal A : STD_LOGIC_VECTOR (3 downto 0);
+    signal d0_segments : STD_LOGIC_VECTOR (6 downto 0);
+    signal d1_segments : STD_LOGIC_VECTOR (6 downto 0);
+
+begin
+
+    -- 设计比较器
+    z <= SW(3) and (SW(2) or SW(1));
+
+    -- 设计电路 A，根据 V>9 的情况
+    A(3) <= '0';
+    A(2) <= SW(3) and not SW(2);
+    A(1) <= SW(1);
+    A(0) <= SW(0) and not SW(1);
+
+    -- 设计2-to-1多路复用器，输出十进制的个位数
+    d0_segments <= "1000000" when z = '0' and SW = "0000" else
+                   "1111001" when z = '0' and SW = "0001" else
+                   "0100100" when z = '0' and SW = "0010" else
+                   "0110000" when z = '0' and SW = "0011" else
+                   "0011001" when z = '0' and SW = "0100" else
+                   "0010010" when z = '0' and SW = "0101" else
+                   "0000010" when z = '0' and SW = "0110" else
+                   "1111000" when z = '0' and SW = "0111" else
+                   "0000000" when z = '0' and SW = "1000" else
+                   "0010000" when z = '0' and SW = "1001" else
+                   "1000000" when z = '1' and A = "0000" else
+                   "1111001" when z = '1' and A = "0001" else
+                   "0100100" when z = '1' and A = "0010" else
+                   "0110000" when z = '1' and A = "0011" else
+                   "0011001" when z = '1' and A = "0100" else
+                   "1111111"; -- 不使用的情况
+
+    -- 设计十进制高位显示（d1）
+    d1_segments <= "1111110" when z = '0' else
+                   "1111001" when z = '1';
+
+    -- 分配输出
+    HEX0 <= d0_segments;
+    HEX1 <= d1_segments;
+
+end Behavioral;
+
+

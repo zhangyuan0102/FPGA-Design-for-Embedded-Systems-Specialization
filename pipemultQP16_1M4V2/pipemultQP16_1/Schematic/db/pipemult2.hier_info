@@ -1,0 +1,956 @@
+|pipemult
+Cout <= Add32:inst4.Cout
+Cin => Add32:inst4.Cin
+A[0] => Add32:inst4.A[0]
+A[1] => Add32:inst4.A[1]
+A[2] => Add32:inst4.A[2]
+A[3] => Add32:inst4.A[3]
+A[4] => Add32:inst4.A[4]
+A[5] => Add32:inst4.A[5]
+A[6] => Add32:inst4.A[6]
+A[7] => Add32:inst4.A[7]
+A[8] => Add32:inst4.A[8]
+A[9] => Add32:inst4.A[9]
+A[10] => Add32:inst4.A[10]
+A[11] => Add32:inst4.A[11]
+A[12] => Add32:inst4.A[12]
+A[13] => Add32:inst4.A[13]
+A[14] => Add32:inst4.A[14]
+A[15] => Add32:inst4.A[15]
+A[16] => Add32:inst4.A[16]
+A[17] => Add32:inst4.A[17]
+A[18] => Add32:inst4.A[18]
+A[19] => Add32:inst4.A[19]
+A[20] => Add32:inst4.A[20]
+A[21] => Add32:inst4.A[21]
+A[22] => Add32:inst4.A[22]
+A[23] => Add32:inst4.A[23]
+A[24] => Add32:inst4.A[24]
+A[25] => Add32:inst4.A[25]
+A[26] => Add32:inst4.A[26]
+A[27] => Add32:inst4.A[27]
+A[28] => Add32:inst4.A[28]
+A[29] => Add32:inst4.A[29]
+A[30] => Add32:inst4.A[30]
+A[31] => Add32:inst4.A[31]
+B[0] => Add32:inst4.B[0]
+B[1] => Add32:inst4.B[1]
+B[2] => Add32:inst4.B[2]
+B[3] => Add32:inst4.B[3]
+B[4] => Add32:inst4.B[4]
+B[5] => Add32:inst4.B[5]
+B[6] => Add32:inst4.B[6]
+B[7] => Add32:inst4.B[7]
+B[8] => Add32:inst4.B[8]
+B[9] => Add32:inst4.B[9]
+B[10] => Add32:inst4.B[10]
+B[11] => Add32:inst4.B[11]
+B[12] => Add32:inst4.B[12]
+B[13] => Add32:inst4.B[13]
+B[14] => Add32:inst4.B[14]
+B[15] => Add32:inst4.B[15]
+B[16] => Add32:inst4.B[16]
+B[17] => Add32:inst4.B[17]
+B[18] => Add32:inst4.B[18]
+B[19] => Add32:inst4.B[19]
+B[20] => Add32:inst4.B[20]
+B[21] => Add32:inst4.B[21]
+B[22] => Add32:inst4.B[22]
+B[23] => Add32:inst4.B[23]
+B[24] => Add32:inst4.B[24]
+B[25] => Add32:inst4.B[25]
+B[26] => Add32:inst4.B[26]
+B[27] => Add32:inst4.B[27]
+B[28] => Add32:inst4.B[28]
+B[29] => Add32:inst4.B[29]
+B[30] => Add32:inst4.B[30]
+B[31] => Add32:inst4.B[31]
+q[15] <= inst2[0].DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= inst2[1].DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= inst2[2].DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= inst2[3].DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= inst2[4].DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= inst2[5].DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= inst2[6].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= inst2[7].DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= inst2[8].DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= inst2[9].DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= inst2[10].DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= inst2[11].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= inst2[12].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= inst2[13].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= inst2[14].DB_MAX_OUTPUT_PORT_TYPE
+q[0] <= inst2[15].DB_MAX_OUTPUT_PORT_TYPE
+clk1 => inst2[15].CLK
+clk1 => inst2[14].CLK
+clk1 => inst2[13].CLK
+clk1 => inst2[12].CLK
+clk1 => inst2[11].CLK
+clk1 => inst2[10].CLK
+clk1 => inst2[9].CLK
+clk1 => inst2[8].CLK
+clk1 => inst2[7].CLK
+clk1 => inst2[6].CLK
+clk1 => inst2[5].CLK
+clk1 => inst2[4].CLK
+clk1 => inst2[3].CLK
+clk1 => inst2[2].CLK
+clk1 => inst2[1].CLK
+clk1 => inst2[0].CLK
+clk1 => ram:inst1.clock
+clk1 => mult:inst.clock
+wren => ram:inst1.wren
+dataa[0] => mult:inst.dataa[0]
+dataa[1] => mult:inst.dataa[1]
+dataa[2] => mult:inst.dataa[2]
+dataa[3] => mult:inst.dataa[3]
+dataa[4] => mult:inst.dataa[4]
+dataa[5] => mult:inst.dataa[5]
+dataa[6] => mult:inst.dataa[6]
+dataa[7] => mult:inst.dataa[7]
+datab[0] => mult:inst.datab[0]
+datab[1] => mult:inst.datab[1]
+datab[2] => mult:inst.datab[2]
+datab[3] => mult:inst.datab[3]
+datab[4] => mult:inst.datab[4]
+datab[5] => mult:inst.datab[5]
+datab[6] => mult:inst.datab[6]
+datab[7] => mult:inst.datab[7]
+rdaddress[0] => ram:inst1.rdaddress[0]
+rdaddress[1] => ram:inst1.rdaddress[1]
+rdaddress[2] => ram:inst1.rdaddress[2]
+rdaddress[3] => ram:inst1.rdaddress[3]
+rdaddress[4] => ram:inst1.rdaddress[4]
+wraddress[0] => ram:inst1.wraddress[0]
+wraddress[1] => ram:inst1.wraddress[1]
+wraddress[2] => ram:inst1.wraddress[2]
+wraddress[3] => ram:inst1.wraddress[3]
+wraddress[4] => ram:inst1.wraddress[4]
+Sum[0] <= Add32:inst4.Sum[0]
+Sum[1] <= Add32:inst4.Sum[1]
+Sum[2] <= Add32:inst4.Sum[2]
+Sum[3] <= Add32:inst4.Sum[3]
+Sum[4] <= Add32:inst4.Sum[4]
+Sum[5] <= Add32:inst4.Sum[5]
+Sum[6] <= Add32:inst4.Sum[6]
+Sum[7] <= Add32:inst4.Sum[7]
+Sum[8] <= Add32:inst4.Sum[8]
+Sum[9] <= Add32:inst4.Sum[9]
+Sum[10] <= Add32:inst4.Sum[10]
+Sum[11] <= Add32:inst4.Sum[11]
+Sum[12] <= Add32:inst4.Sum[12]
+Sum[13] <= Add32:inst4.Sum[13]
+Sum[14] <= Add32:inst4.Sum[14]
+Sum[15] <= Add32:inst4.Sum[15]
+Sum[16] <= Add32:inst4.Sum[16]
+Sum[17] <= Add32:inst4.Sum[17]
+Sum[18] <= Add32:inst4.Sum[18]
+Sum[19] <= Add32:inst4.Sum[19]
+Sum[20] <= Add32:inst4.Sum[20]
+Sum[21] <= Add32:inst4.Sum[21]
+Sum[22] <= Add32:inst4.Sum[22]
+Sum[23] <= Add32:inst4.Sum[23]
+Sum[24] <= Add32:inst4.Sum[24]
+Sum[25] <= Add32:inst4.Sum[25]
+Sum[26] <= Add32:inst4.Sum[26]
+Sum[27] <= Add32:inst4.Sum[27]
+Sum[28] <= Add32:inst4.Sum[28]
+Sum[29] <= Add32:inst4.Sum[29]
+Sum[30] <= Add32:inst4.Sum[30]
+Sum[31] <= Add32:inst4.Sum[31]
+
+
+|pipemult|Add32:inst4
+Cout <= Add8:inst4.Cout
+Cin => Add8:inst.Cin
+A[0] => Add8:inst.A[0]
+A[1] => Add8:inst.A[1]
+A[2] => Add8:inst.A[2]
+A[3] => Add8:inst.A[3]
+A[4] => Add8:inst.A[4]
+A[5] => Add8:inst.A[5]
+A[6] => Add8:inst.A[6]
+A[7] => Add8:inst.A[7]
+A[8] => Add8:inst2.A[0]
+A[9] => Add8:inst2.A[1]
+A[10] => Add8:inst2.A[2]
+A[11] => Add8:inst2.A[3]
+A[12] => Add8:inst2.A[4]
+A[13] => Add8:inst2.A[5]
+A[14] => Add8:inst2.A[6]
+A[15] => Add8:inst2.A[7]
+A[16] => Add8:inst3.A[0]
+A[17] => Add8:inst3.A[1]
+A[18] => Add8:inst3.A[2]
+A[19] => Add8:inst3.A[3]
+A[20] => Add8:inst3.A[4]
+A[21] => Add8:inst3.A[5]
+A[22] => Add8:inst3.A[6]
+A[23] => Add8:inst3.A[7]
+A[24] => Add8:inst4.A[0]
+A[25] => Add8:inst4.A[1]
+A[26] => Add8:inst4.A[2]
+A[27] => Add8:inst4.A[3]
+A[28] => Add8:inst4.A[4]
+A[29] => Add8:inst4.A[5]
+A[30] => Add8:inst4.A[6]
+A[31] => Add8:inst4.A[7]
+B[0] => Add8:inst.B[0]
+B[1] => Add8:inst.B[1]
+B[2] => Add8:inst.B[2]
+B[3] => Add8:inst.B[3]
+B[4] => Add8:inst.B[4]
+B[5] => Add8:inst.B[5]
+B[6] => Add8:inst.B[6]
+B[7] => Add8:inst.B[7]
+B[8] => Add8:inst2.B[0]
+B[9] => Add8:inst2.B[1]
+B[10] => Add8:inst2.B[2]
+B[11] => Add8:inst2.B[3]
+B[12] => Add8:inst2.B[4]
+B[13] => Add8:inst2.B[5]
+B[14] => Add8:inst2.B[6]
+B[15] => Add8:inst2.B[7]
+B[16] => Add8:inst3.B[0]
+B[17] => Add8:inst3.B[1]
+B[18] => Add8:inst3.B[2]
+B[19] => Add8:inst3.B[3]
+B[20] => Add8:inst3.B[4]
+B[21] => Add8:inst3.B[5]
+B[22] => Add8:inst3.B[6]
+B[23] => Add8:inst3.B[7]
+B[24] => Add8:inst4.B[0]
+B[25] => Add8:inst4.B[1]
+B[26] => Add8:inst4.B[2]
+B[27] => Add8:inst4.B[3]
+B[28] => Add8:inst4.B[4]
+B[29] => Add8:inst4.B[5]
+B[30] => Add8:inst4.B[6]
+B[31] => Add8:inst4.B[7]
+Sum[0] <= Add8:inst.Sum[7]
+Sum[1] <= Add8:inst.Sum[6]
+Sum[2] <= Add8:inst.Sum[5]
+Sum[3] <= Add8:inst.Sum[4]
+Sum[4] <= Add8:inst.Sum[3]
+Sum[5] <= Add8:inst.Sum[2]
+Sum[6] <= Add8:inst.Sum[1]
+Sum[7] <= Add8:inst.Sum[0]
+Sum[8] <= Add8:inst2.Sum[7]
+Sum[9] <= Add8:inst2.Sum[6]
+Sum[10] <= Add8:inst2.Sum[5]
+Sum[11] <= Add8:inst2.Sum[4]
+Sum[12] <= Add8:inst2.Sum[3]
+Sum[13] <= Add8:inst2.Sum[2]
+Sum[14] <= Add8:inst2.Sum[1]
+Sum[15] <= Add8:inst2.Sum[0]
+Sum[16] <= Add8:inst3.Sum[7]
+Sum[17] <= Add8:inst3.Sum[6]
+Sum[18] <= Add8:inst3.Sum[5]
+Sum[19] <= Add8:inst3.Sum[4]
+Sum[20] <= Add8:inst3.Sum[3]
+Sum[21] <= Add8:inst3.Sum[2]
+Sum[22] <= Add8:inst3.Sum[1]
+Sum[23] <= Add8:inst3.Sum[0]
+Sum[24] <= Add8:inst4.Sum[7]
+Sum[25] <= Add8:inst4.Sum[6]
+Sum[26] <= Add8:inst4.Sum[5]
+Sum[27] <= Add8:inst4.Sum[4]
+Sum[28] <= Add8:inst4.Sum[3]
+Sum[29] <= Add8:inst4.Sum[2]
+Sum[30] <= Add8:inst4.Sum[1]
+Sum[31] <= Add8:inst4.Sum[0]
+
+
+|pipemult|Add32:inst4|Add8:inst4
+Cout <= Add1:inst7.Cout[0]
+A[0] => Add1:inst.A[0]
+A[1] => Add1:inst1.A[0]
+A[2] => Add1:inst2.A[0]
+A[3] => Add1:inst3.A[0]
+A[4] => Add1:inst4.A[0]
+A[5] => Add1:inst5.A[0]
+A[6] => Add1:inst6.A[0]
+A[7] => Add1:inst7.A[0]
+B[0] => Add1:inst.B[0]
+B[1] => Add1:inst1.B[0]
+B[2] => Add1:inst2.B[0]
+B[3] => Add1:inst3.B[0]
+B[4] => Add1:inst4.B[0]
+B[5] => Add1:inst5.B[0]
+B[6] => Add1:inst6.B[0]
+B[7] => Add1:inst7.B[0]
+Cin => Add1:inst.C[0]
+Sum[7] <= Add1:inst7.sum[0]
+Sum[6] <= Add1:inst6.sum[0]
+Sum[5] <= Add1:inst5.sum[0]
+Sum[4] <= Add1:inst4.sum[0]
+Sum[3] <= Add1:inst3.sum[0]
+Sum[2] <= Add1:inst2.sum[0]
+Sum[1] <= Add1:inst1.sum[0]
+Sum[0] <= Add1:inst.sum[0]
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst7
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst6
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst5
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst4
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst3
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst2
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst1
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst4|Add1:inst
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3
+Cout <= Add1:inst7.Cout[0]
+A[0] => Add1:inst.A[0]
+A[1] => Add1:inst1.A[0]
+A[2] => Add1:inst2.A[0]
+A[3] => Add1:inst3.A[0]
+A[4] => Add1:inst4.A[0]
+A[5] => Add1:inst5.A[0]
+A[6] => Add1:inst6.A[0]
+A[7] => Add1:inst7.A[0]
+B[0] => Add1:inst.B[0]
+B[1] => Add1:inst1.B[0]
+B[2] => Add1:inst2.B[0]
+B[3] => Add1:inst3.B[0]
+B[4] => Add1:inst4.B[0]
+B[5] => Add1:inst5.B[0]
+B[6] => Add1:inst6.B[0]
+B[7] => Add1:inst7.B[0]
+Cin => Add1:inst.C[0]
+Sum[7] <= Add1:inst7.sum[0]
+Sum[6] <= Add1:inst6.sum[0]
+Sum[5] <= Add1:inst5.sum[0]
+Sum[4] <= Add1:inst4.sum[0]
+Sum[3] <= Add1:inst3.sum[0]
+Sum[2] <= Add1:inst2.sum[0]
+Sum[1] <= Add1:inst1.sum[0]
+Sum[0] <= Add1:inst.sum[0]
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst7
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst6
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst5
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst4
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst3
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst2
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst1
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst3|Add1:inst
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2
+Cout <= Add1:inst7.Cout[0]
+A[0] => Add1:inst.A[0]
+A[1] => Add1:inst1.A[0]
+A[2] => Add1:inst2.A[0]
+A[3] => Add1:inst3.A[0]
+A[4] => Add1:inst4.A[0]
+A[5] => Add1:inst5.A[0]
+A[6] => Add1:inst6.A[0]
+A[7] => Add1:inst7.A[0]
+B[0] => Add1:inst.B[0]
+B[1] => Add1:inst1.B[0]
+B[2] => Add1:inst2.B[0]
+B[3] => Add1:inst3.B[0]
+B[4] => Add1:inst4.B[0]
+B[5] => Add1:inst5.B[0]
+B[6] => Add1:inst6.B[0]
+B[7] => Add1:inst7.B[0]
+Cin => Add1:inst.C[0]
+Sum[7] <= Add1:inst7.sum[0]
+Sum[6] <= Add1:inst6.sum[0]
+Sum[5] <= Add1:inst5.sum[0]
+Sum[4] <= Add1:inst4.sum[0]
+Sum[3] <= Add1:inst3.sum[0]
+Sum[2] <= Add1:inst2.sum[0]
+Sum[1] <= Add1:inst1.sum[0]
+Sum[0] <= Add1:inst.sum[0]
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst7
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst6
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst5
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst4
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst3
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst2
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst1
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst2|Add1:inst
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst
+Cout <= Add1:inst7.Cout[0]
+A[0] => Add1:inst.A[0]
+A[1] => Add1:inst1.A[0]
+A[2] => Add1:inst2.A[0]
+A[3] => Add1:inst3.A[0]
+A[4] => Add1:inst4.A[0]
+A[5] => Add1:inst5.A[0]
+A[6] => Add1:inst6.A[0]
+A[7] => Add1:inst7.A[0]
+B[0] => Add1:inst.B[0]
+B[1] => Add1:inst1.B[0]
+B[2] => Add1:inst2.B[0]
+B[3] => Add1:inst3.B[0]
+B[4] => Add1:inst4.B[0]
+B[5] => Add1:inst5.B[0]
+B[6] => Add1:inst6.B[0]
+B[7] => Add1:inst7.B[0]
+Cin => Add1:inst.C[0]
+Sum[7] <= Add1:inst7.sum[0]
+Sum[6] <= Add1:inst6.sum[0]
+Sum[5] <= Add1:inst5.sum[0]
+Sum[4] <= Add1:inst4.sum[0]
+Sum[3] <= Add1:inst3.sum[0]
+Sum[2] <= Add1:inst2.sum[0]
+Sum[1] <= Add1:inst1.sum[0]
+Sum[0] <= Add1:inst.sum[0]
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst7
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst6
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst5
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst4
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst3
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst2
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst1
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|Add32:inst4|Add8:inst|Add1:inst
+Cout[0] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => inst4.IN0
+A[0] => inst.IN0
+B[0] => inst4.IN1
+B[0] => inst.IN1
+C[0] => inst3.IN1
+C[0] => inst2.IN1
+Sum[0] <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|ram:inst1
+clock => ram_block~21.CLK
+clock => ram_block~0.CLK
+clock => ram_block~1.CLK
+clock => ram_block~2.CLK
+clock => ram_block~3.CLK
+clock => ram_block~4.CLK
+clock => ram_block~5.CLK
+clock => ram_block~6.CLK
+clock => ram_block~7.CLK
+clock => ram_block~8.CLK
+clock => ram_block~9.CLK
+clock => ram_block~10.CLK
+clock => ram_block~11.CLK
+clock => ram_block~12.CLK
+clock => ram_block~13.CLK
+clock => ram_block~14.CLK
+clock => ram_block~15.CLK
+clock => ram_block~16.CLK
+clock => ram_block~17.CLK
+clock => ram_block~18.CLK
+clock => ram_block~19.CLK
+clock => ram_block~20.CLK
+clock => q[0]~reg0.CLK
+clock => q[1]~reg0.CLK
+clock => q[2]~reg0.CLK
+clock => q[3]~reg0.CLK
+clock => q[4]~reg0.CLK
+clock => q[5]~reg0.CLK
+clock => q[6]~reg0.CLK
+clock => q[7]~reg0.CLK
+clock => q[8]~reg0.CLK
+clock => q[9]~reg0.CLK
+clock => q[10]~reg0.CLK
+clock => q[11]~reg0.CLK
+clock => q[12]~reg0.CLK
+clock => q[13]~reg0.CLK
+clock => q[14]~reg0.CLK
+clock => q[15]~reg0.CLK
+clock => rdaddress_reg[0].CLK
+clock => rdaddress_reg[1].CLK
+clock => rdaddress_reg[2].CLK
+clock => rdaddress_reg[3].CLK
+clock => rdaddress_reg[4].CLK
+clock => ram_block.CLK0
+data[0] => ram_block~20.DATAIN
+data[0] => ram_block.DATAIN
+data[1] => ram_block~19.DATAIN
+data[1] => ram_block.DATAIN1
+data[2] => ram_block~18.DATAIN
+data[2] => ram_block.DATAIN2
+data[3] => ram_block~17.DATAIN
+data[3] => ram_block.DATAIN3
+data[4] => ram_block~16.DATAIN
+data[4] => ram_block.DATAIN4
+data[5] => ram_block~15.DATAIN
+data[5] => ram_block.DATAIN5
+data[6] => ram_block~14.DATAIN
+data[6] => ram_block.DATAIN6
+data[7] => ram_block~13.DATAIN
+data[7] => ram_block.DATAIN7
+data[8] => ram_block~12.DATAIN
+data[8] => ram_block.DATAIN8
+data[9] => ram_block~11.DATAIN
+data[9] => ram_block.DATAIN9
+data[10] => ram_block~10.DATAIN
+data[10] => ram_block.DATAIN10
+data[11] => ram_block~9.DATAIN
+data[11] => ram_block.DATAIN11
+data[12] => ram_block~8.DATAIN
+data[12] => ram_block.DATAIN12
+data[13] => ram_block~7.DATAIN
+data[13] => ram_block.DATAIN13
+data[14] => ram_block~6.DATAIN
+data[14] => ram_block.DATAIN14
+data[15] => ram_block~5.DATAIN
+data[15] => ram_block.DATAIN15
+wraddress[0] => ram_block~4.DATAIN
+wraddress[0] => ram_block.WADDR
+wraddress[1] => ram_block~3.DATAIN
+wraddress[1] => ram_block.WADDR1
+wraddress[2] => ram_block~2.DATAIN
+wraddress[2] => ram_block.WADDR2
+wraddress[3] => ram_block~1.DATAIN
+wraddress[3] => ram_block.WADDR3
+wraddress[4] => ram_block~0.DATAIN
+wraddress[4] => ram_block.WADDR4
+rdaddress[0] => rdaddress_reg[0].DATAIN
+rdaddress[1] => rdaddress_reg[1].DATAIN
+rdaddress[2] => rdaddress_reg[2].DATAIN
+rdaddress[3] => rdaddress_reg[3].DATAIN
+rdaddress[4] => rdaddress_reg[4].DATAIN
+wren => ram_block~21.DATAIN
+wren => ram_block.WE
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|pipemult|mult:inst
+clock => lpm_mult:lpm_mult_component.clock
+dataa[0] => lpm_mult:lpm_mult_component.dataa[0]
+dataa[1] => lpm_mult:lpm_mult_component.dataa[1]
+dataa[2] => lpm_mult:lpm_mult_component.dataa[2]
+dataa[3] => lpm_mult:lpm_mult_component.dataa[3]
+dataa[4] => lpm_mult:lpm_mult_component.dataa[4]
+dataa[5] => lpm_mult:lpm_mult_component.dataa[5]
+dataa[6] => lpm_mult:lpm_mult_component.dataa[6]
+dataa[7] => lpm_mult:lpm_mult_component.dataa[7]
+datab[0] => lpm_mult:lpm_mult_component.datab[0]
+datab[1] => lpm_mult:lpm_mult_component.datab[1]
+datab[2] => lpm_mult:lpm_mult_component.datab[2]
+datab[3] => lpm_mult:lpm_mult_component.datab[3]
+datab[4] => lpm_mult:lpm_mult_component.datab[4]
+datab[5] => lpm_mult:lpm_mult_component.datab[5]
+datab[6] => lpm_mult:lpm_mult_component.datab[6]
+datab[7] => lpm_mult:lpm_mult_component.datab[7]
+result[0] <= lpm_mult:lpm_mult_component.result[0]
+result[1] <= lpm_mult:lpm_mult_component.result[1]
+result[2] <= lpm_mult:lpm_mult_component.result[2]
+result[3] <= lpm_mult:lpm_mult_component.result[3]
+result[4] <= lpm_mult:lpm_mult_component.result[4]
+result[5] <= lpm_mult:lpm_mult_component.result[5]
+result[6] <= lpm_mult:lpm_mult_component.result[6]
+result[7] <= lpm_mult:lpm_mult_component.result[7]
+result[8] <= lpm_mult:lpm_mult_component.result[8]
+result[9] <= lpm_mult:lpm_mult_component.result[9]
+result[10] <= lpm_mult:lpm_mult_component.result[10]
+result[11] <= lpm_mult:lpm_mult_component.result[11]
+result[12] <= lpm_mult:lpm_mult_component.result[12]
+result[13] <= lpm_mult:lpm_mult_component.result[13]
+result[14] <= lpm_mult:lpm_mult_component.result[14]
+result[15] <= lpm_mult:lpm_mult_component.result[15]
+
+
+|pipemult|mult:inst|lpm_mult:lpm_mult_component
+dataa[0] => mult_blo:auto_generated.dataa[0]
+dataa[1] => mult_blo:auto_generated.dataa[1]
+dataa[2] => mult_blo:auto_generated.dataa[2]
+dataa[3] => mult_blo:auto_generated.dataa[3]
+dataa[4] => mult_blo:auto_generated.dataa[4]
+dataa[5] => mult_blo:auto_generated.dataa[5]
+dataa[6] => mult_blo:auto_generated.dataa[6]
+dataa[7] => mult_blo:auto_generated.dataa[7]
+datab[0] => mult_blo:auto_generated.datab[0]
+datab[1] => mult_blo:auto_generated.datab[1]
+datab[2] => mult_blo:auto_generated.datab[2]
+datab[3] => mult_blo:auto_generated.datab[3]
+datab[4] => mult_blo:auto_generated.datab[4]
+datab[5] => mult_blo:auto_generated.datab[5]
+datab[6] => mult_blo:auto_generated.datab[6]
+datab[7] => mult_blo:auto_generated.datab[7]
+sum[0] => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+sclr => ~NO_FANOUT~
+clock => mult_blo:auto_generated.clock
+clken => ~NO_FANOUT~
+result[0] <= mult_blo:auto_generated.result[0]
+result[1] <= mult_blo:auto_generated.result[1]
+result[2] <= mult_blo:auto_generated.result[2]
+result[3] <= mult_blo:auto_generated.result[3]
+result[4] <= mult_blo:auto_generated.result[4]
+result[5] <= mult_blo:auto_generated.result[5]
+result[6] <= mult_blo:auto_generated.result[6]
+result[7] <= mult_blo:auto_generated.result[7]
+result[8] <= mult_blo:auto_generated.result[8]
+result[9] <= mult_blo:auto_generated.result[9]
+result[10] <= mult_blo:auto_generated.result[10]
+result[11] <= mult_blo:auto_generated.result[11]
+result[12] <= mult_blo:auto_generated.result[12]
+result[13] <= mult_blo:auto_generated.result[13]
+result[14] <= mult_blo:auto_generated.result[14]
+result[15] <= mult_blo:auto_generated.result[15]
+
+
+|pipemult|mult:inst|lpm_mult:lpm_mult_component|mult_blo:auto_generated
+clock => mac_mult1.CLK
+clock => mac_out2.CLK
+dataa[0] => mac_mult1.DATAA
+dataa[1] => mac_mult1.DATAA1
+dataa[2] => mac_mult1.DATAA2
+dataa[3] => mac_mult1.DATAA3
+dataa[4] => mac_mult1.DATAA4
+dataa[5] => mac_mult1.DATAA5
+dataa[6] => mac_mult1.DATAA6
+dataa[7] => mac_mult1.DATAA7
+datab[0] => mac_mult1.DATAB
+datab[1] => mac_mult1.DATAB1
+datab[2] => mac_mult1.DATAB2
+datab[3] => mac_mult1.DATAB3
+datab[4] => mac_mult1.DATAB4
+datab[5] => mac_mult1.DATAB5
+datab[6] => mac_mult1.DATAB6
+datab[7] => mac_mult1.DATAB7
+result[0] <= mac_out2.DATAOUT
+result[1] <= mac_out2.DATAOUT1
+result[2] <= mac_out2.DATAOUT2
+result[3] <= mac_out2.DATAOUT3
+result[4] <= mac_out2.DATAOUT4
+result[5] <= mac_out2.DATAOUT5
+result[6] <= mac_out2.DATAOUT6
+result[7] <= mac_out2.DATAOUT7
+result[8] <= mac_out2.DATAOUT8
+result[9] <= mac_out2.DATAOUT9
+result[10] <= mac_out2.DATAOUT10
+result[11] <= mac_out2.DATAOUT11
+result[12] <= mac_out2.DATAOUT12
+result[13] <= mac_out2.DATAOUT13
+result[14] <= mac_out2.DATAOUT14
+result[15] <= mac_out2.DATAOUT15
+
+

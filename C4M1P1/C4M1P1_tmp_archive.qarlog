@@ -1,0 +1,22 @@
+Quartus Prime Archive log --	C:/AlteraPrj/C4M1P1/C4M1P1_tmp_archive.qarlog
+
+Archive:	C:/AlteraPrj/C4M1P1/C4M1P1_tmp_archive.qar
+Date:		Sun Aug 11 15:04:24 2024
+Quartus Prime		16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/AlteraPrj/C4M1P1/C4M1P1.qpf
+C:/AlteraPrj/C4M1P1/C4M1P1.qsf
+C:/AlteraPrj/C4M1P1/C4M1P1.vhd
+C:/AlteraPrj/C4M1P1/C4M1P1_assignment_defaults.qdf
+C:/AlteraPrj/C4M1P1/DE10_LITE_Golden_Top.v
+	======= Total: 5 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Aug 11 15:04:26 2024
+Source archive file:	C:/AlteraPrj/C4M1P1/C4M1P1_tmp_archive.qar
+Archive was extracted into	C:/AlteraPrj/C4M1P2/
+		 - successfully.

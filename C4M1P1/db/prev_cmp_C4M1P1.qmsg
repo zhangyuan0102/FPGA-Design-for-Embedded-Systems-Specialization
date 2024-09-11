@@ -1,0 +1,12 @@
+{ "Info" "0" "" "qar.tcl version #1" {  } {  } 0 0 "qar.tcl version #1" 0 0 "0" 0 0 1723352664294 ""}
+{ "Info" "0" "" "Including '-use_file_set basic' by default" {  } {  } 0 0 "Including '-use_file_set basic' by default" 0 0 "0" 0 0 1723352664708 ""}
+{ "Info" "0" "" "All project revisions will be stored in common archive C4M1P1_tmp_archive.qar" {  } {  } 0 0 "All project revisions will be stored in common archive C4M1P1_tmp_archive.qar" 0 0 "0" 0 0 1723352664708 ""}
+{ "Info" "0" "" "Initializing files for 'C4M1P1' revision" {  } {  } 0 0 "Initializing files for 'C4M1P1' revision" 0 0 "0" 0 0 1723352664753 ""}
+{ "Info" "0" "" "File Set 'Source control' contains:" { { "Info" "0" "" "Project source and settings files" {  } {  } 0 0 "Project source and settings files" 0 0 "0" 0 0 1723352664760 ""} { "Info" "0" "" "Automatically detected source files" {  } {  } 0 0 "Automatically detected source files" 0 0 "0" 0 0 1723352664760 ""}  } {  } 0 0 "File Set 'Source control' contains:" 0 0 "0" 0 0 1723352664760 ""}
+{ "Info" "0" "" "Archive will store files relative to the closest common parent directory" {  } {  } 0 0 "Archive will store files relative to the closest common parent directory" 0 0 "0" 0 0 1723352664907 ""}
+{ "Info" "IPRJ_ARC_TCL_TCL_USING_COMMON_DIR" "C:/AlteraPrj/C4M1P1/ " "Using common directory C:/AlteraPrj/C4M1P1/" {  } {  } 0 13213 "Using common directory %1!s!" 0 0 "Design Software" 0 -1 1723352664926 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1723352664940 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1723352664940 ""}
+{ "Info" "0" "" "Generated archive 'C4M1P1_tmp_archive.qar'" {  } {  } 0 0 "Generated archive 'C4M1P1_tmp_archive.qar'" 0 0 "0" 0 0 1723352664940 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1723352664940 ""}
+{ "Info" "0" "" "----------------------------------------------------------" {  } {  } 0 0 "----------------------------------------------------------" 0 0 "0" 0 0 1723352664940 ""}

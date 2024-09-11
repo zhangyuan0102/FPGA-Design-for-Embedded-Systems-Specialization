@@ -1,0 +1,457 @@
+PowerPlay Power Analyzer report for pipemult2
+Mon Jul 29 09:59:27 2024
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. PowerPlay Power Analyzer Summary
+  4. PowerPlay Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Operating Conditions Used
+  7. Thermal Power Dissipation by Block
+  8. Thermal Power Dissipation by Block Type
+  9. Thermal Power Dissipation by Hierarchy
+ 10. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 11. Current Drawn from Voltage Supplies Summary
+ 12. VCCIO Supply Current Drawn by I/O Bank
+ 13. VCCIO Supply Current Drawn by Voltage
+ 14. Confidence Metric Details
+ 15. Signal Activities
+ 16. PowerPlay Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 8           ;
+;                            ;             ;
+; Average used               ; 1.09        ;
+; Maximum used               ; 8           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   1.3%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Summary                                                          ;
++----------------------------------------+--------------------------------------------------+
+; PowerPlay Power Analyzer Status        ; Successful - Mon Jul 29 09:59:27 2024            ;
+; Quartus Prime Version                  ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition      ;
+; Revision Name                          ; pipemult2                                        ;
+; Top-level Entity Name                  ; pipemult                                         ;
+; Family                                 ; MAX 10                                           ;
+; Device                                 ; 10M08DAF484C8GES                                 ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 83.43 mW                                         ;
+; Core Dynamic Thermal Power Dissipation ; 4.10 mW                                          ;
+; Core Static Thermal Power Dissipation  ; 63.47 mW                                         ;
+; I/O Thermal Power Dissipation          ; 15.86 mW                                         ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; PowerPlay Power Analyzer Settings                                                                                                  ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                                     ; Setting                               ; Default Value ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                                      ; Off                                   ; Off           ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                                ; Off                                   ; Off           ;
+; Device Power Characteristics                                               ; MAXIMUM                               ; TYPICAL       ;
+; Preset Cooling Solution                                                    ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                                        ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                                  ; 12.5%                                 ; 12.5%         ;
+; Default Power Input I/O Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                                  ; On                                    ; On            ;
+; Use Input Files                                                            ; Off                                   ; Off           ;
+; Filter Glitches in VCD File Reader                                         ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                                      ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                                    ; Off                                   ; Off           ;
+; Automatically Compute Junction Temperature                                 ; On                                    ; On            ;
+; Specified Junction Temperature                                             ; 25                                    ; 25            ;
+; Ambient Temperature                                                        ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                                ; Off                                   ; Off           ;
+; Board Temperature                                                          ; 25                                    ; 25            ;
++----------------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++-------------------------------------+
+; Indeterminate Toggle Rates          ;
++-------+-----------------------------+
+; Node  ; Reason                      ;
++-------+-----------------------------+
+; A[30] ; No valid clock domain found ;
+; B[30] ; No valid clock domain found ;
+; A[28] ; No valid clock domain found ;
+; B[28] ; No valid clock domain found ;
+; A[26] ; No valid clock domain found ;
+; B[26] ; No valid clock domain found ;
+; A[24] ; No valid clock domain found ;
+; B[24] ; No valid clock domain found ;
+; A[22] ; No valid clock domain found ;
+; B[22] ; No valid clock domain found ;
+; A[20] ; No valid clock domain found ;
+; B[20] ; No valid clock domain found ;
+; A[18] ; No valid clock domain found ;
+; B[18] ; No valid clock domain found ;
+; A[16] ; No valid clock domain found ;
+; B[16] ; No valid clock domain found ;
+; A[14] ; No valid clock domain found ;
+; B[14] ; No valid clock domain found ;
+; A[12] ; No valid clock domain found ;
+; B[12] ; No valid clock domain found ;
+; A[10] ; No valid clock domain found ;
+; B[10] ; No valid clock domain found ;
+; A[8]  ; No valid clock domain found ;
+; B[8]  ; No valid clock domain found ;
+; A[6]  ; No valid clock domain found ;
+; B[6]  ; No valid clock domain found ;
+; A[4]  ; No valid clock domain found ;
+; B[4]  ; No valid clock domain found ;
+; A[2]  ; No valid clock domain found ;
+; B[2]  ; No valid clock domain found ;
+; A[0]  ; No valid clock domain found ;
+; B[0]  ; No valid clock domain found ;
+; Cin   ; No valid clock domain found ;
+; A[1]  ; No valid clock domain found ;
+; B[1]  ; No valid clock domain found ;
+; A[3]  ; No valid clock domain found ;
+; B[3]  ; No valid clock domain found ;
+; A[5]  ; No valid clock domain found ;
+; B[5]  ; No valid clock domain found ;
+; A[7]  ; No valid clock domain found ;
+; B[7]  ; No valid clock domain found ;
+; A[9]  ; No valid clock domain found ;
+; B[9]  ; No valid clock domain found ;
+; A[11] ; No valid clock domain found ;
+; B[11] ; No valid clock domain found ;
+; A[13] ; No valid clock domain found ;
+; B[13] ; No valid clock domain found ;
+; A[15] ; No valid clock domain found ;
+; B[15] ; No valid clock domain found ;
+; A[17] ; No valid clock domain found ;
+; B[17] ; No valid clock domain found ;
+; A[19] ; No valid clock domain found ;
+; B[19] ; No valid clock domain found ;
+; A[21] ; No valid clock domain found ;
+; B[21] ; No valid clock domain found ;
+; A[23] ; No valid clock domain found ;
+; B[23] ; No valid clock domain found ;
+; A[25] ; No valid clock domain found ;
+; B[25] ; No valid clock domain found ;
+; A[27] ; No valid clock domain found ;
+; B[27] ; No valid clock domain found ;
+; A[29] ; No valid clock domain found ;
+; B[29] ; No valid clock domain found ;
+; A[31] ; No valid clock domain found ;
+; B[31] ; No valid clock domain found ;
++-------+-----------------------------+
+
+
++--------------------------------------------------------------------------+
+; Operating Conditions Used                                                ;
++---------------------------------------------+----------------------------+
+; Setting                                     ; Value                      ;
++---------------------------------------------+----------------------------+
+; Device power characteristics                ; Maximum                    ;
+;                                             ;                            ;
+; Voltages                                    ;                            ;
+;     VCC                                     ; 1.20 V                     ;
+;     VCCA                                    ; 2.50 V                     ;
+;     VCCD_PLL                                ; 1.20 V                     ;
+;     VCCINT                                  ; 1.20 V                     ;
+;     VCCA_ADC                                ; 2.50 V                     ;
+;     2.5 V I/O Standard                      ; 2.5 V                      ;
+;     2.5 V Schmitt Trigger I/O Standard      ; 2.5 V                      ;
+;                                             ;                            ;
+; Auto computed junction temperature          ; 26.2 degrees Celsius       ;
+;     Ambient temperature                     ; 25.0 degrees Celsius       ;
+;     Junction-to-Case thermal resistance     ; 11.20 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt  ;
+;     Heat Sink-to-Ambient thermal resistance ; 3.50 degrees Celsius/Watt  ;
+;                                             ;                            ;
+; Board model used                            ; None                       ;
++---------------------------------------------+----------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                                   ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type                 ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; M9K                        ; 1.80 mW                           ; 1.77 mW                     ; --                             ; 0.03 mW                       ;    6.250                                                  ;
+; Embedded multiplier block  ; 0.17 mW                           ; 0.17 mW                     ; --                             ; 0.00 mW                       ;   44.444                                                  ;
+; Embedded multiplier output ; 0.29 mW                           ; 0.00 mW                     ; --                             ; 0.29 mW                       ;   50.000                                                  ;
+; Combinational cell         ; 0.00 mW                           ; 0.00 mW                     ; --                             ; 0.00 mW                       ;    0.727                                                  ;
+; Clock control block        ; 1.57 mW                           ; 0.00 mW                     ; --                             ; 1.57 mW                       ;  200.000                                                  ;
+; Register cell              ; 0.16 mW                           ; 0.14 mW                     ; --                             ; 0.02 mW                       ;   12.500                                                  ;
+; I/O register               ; 1.14 mW                           ; 1.14 mW                     ; --                             ; 0.00 mW                       ;    6.250                                                  ;
+; I/O                        ; 3.57 mW                           ; 2.90 mW                     ; 0.58 mW                        ; 0.10 mW                       ;    4.250                                                  ;
++----------------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                       ;
++---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                  ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                           ;
++---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------+
+; |pipemult                                   ; 8.71 mW (6.29 mW)                    ; 6.12 mW (4.03 mW)               ; 0.58 mW (0.58 mW)                 ; 2.01 mW (1.68 mW)                 ; |pipemult                                                                     ;
+;     |hard_block:auto_generated_inst         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|hard_block:auto_generated_inst                                      ;
+;     |mult:inst                              ; 0.46 mW (0.00 mW)                    ; 0.17 mW (0.00 mW)               ; --                                ; 0.29 mW (0.00 mW)                 ; |pipemult|mult:inst                                                           ;
+;         |lpm_mult:lpm_mult_component        ; 0.46 mW (0.00 mW)                    ; 0.17 mW (0.00 mW)               ; --                                ; 0.29 mW (0.00 mW)                 ; |pipemult|mult:inst|lpm_mult:lpm_mult_component                               ;
+;             |mult_blo:auto_generated        ; 0.46 mW (0.46 mW)                    ; 0.17 mW (0.17 mW)               ; --                                ; 0.29 mW (0.29 mW)                 ; |pipemult|mult:inst|lpm_mult:lpm_mult_component|mult_blo:auto_generated       ;
+;     |ram:inst1                              ; 1.96 mW (0.16 mW)                    ; 1.91 mW (0.14 mW)               ; --                                ; 0.04 mW (0.02 mW)                 ; |pipemult|ram:inst1                                                           ;
+;         |altsyncram:ram_block_rtl_0         ; 1.80 mW (0.00 mW)                    ; 1.77 mW (0.00 mW)               ; --                                ; 0.03 mW (0.00 mW)                 ; |pipemult|ram:inst1|altsyncram:ram_block_rtl_0                                ;
+;             |altsyncram_87g1:auto_generated ; 1.80 mW (1.80 mW)                    ; 1.77 mW (1.77 mW)               ; --                                ; 0.03 mW (0.03 mW)                 ; |pipemult|ram:inst1|altsyncram:ram_block_rtl_0|altsyncram_87g1:auto_generated ;
+;     |Add32:inst4                            ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4                                                         ;
+;         |Add8:inst                          ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst                                               ;
+;             |add1:inst                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst                                     ;
+;             |add1:inst1                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst1                                    ;
+;             |add1:inst2                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst2                                    ;
+;             |add1:inst3                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst3                                    ;
+;             |add1:inst4                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst4                                    ;
+;             |add1:inst5                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst5                                    ;
+;             |add1:inst6                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst6                                    ;
+;             |add1:inst7                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst|add1:inst7                                    ;
+;         |Add8:inst2                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2                                              ;
+;             |add1:inst                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst                                    ;
+;             |add1:inst1                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst1                                   ;
+;             |add1:inst2                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst2                                   ;
+;             |add1:inst3                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst3                                   ;
+;             |add1:inst4                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst4                                   ;
+;             |add1:inst5                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst5                                   ;
+;             |add1:inst6                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst6                                   ;
+;             |add1:inst7                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst2|add1:inst7                                   ;
+;         |Add8:inst3                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3                                              ;
+;             |add1:inst                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst                                    ;
+;             |add1:inst1                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst1                                   ;
+;             |add1:inst2                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst2                                   ;
+;             |add1:inst3                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst3                                   ;
+;             |add1:inst4                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst4                                   ;
+;             |add1:inst5                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst5                                   ;
+;             |add1:inst6                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst6                                   ;
+;             |add1:inst7                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst3|add1:inst7                                   ;
+;         |Add8:inst4                         ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4                                              ;
+;             |add1:inst                      ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst                                    ;
+;             |add1:inst1                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst1                                   ;
+;             |add1:inst2                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst2                                   ;
+;             |add1:inst3                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst3                                   ;
+;             |add1:inst4                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst4                                   ;
+;             |add1:inst5                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst5                                   ;
+;             |add1:inst6                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst6                                   ;
+;             |add1:inst7                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |pipemult|Add32:inst4|Add8:inst4|add1:inst7                                   ;
++---------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+-------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++--------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain             ;
++-----------------+-----------------------+--------------------------+
+; Clock Domain    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++-----------------+-----------------------+--------------------------+
+; clk1            ; 100.00                ; 5.06                     ;
+; No clock domain ; 0.00                  ; 0.17                     ;
++-----------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCC            ; 12.20 mA                ; 4.50 mA                   ; 7.69 mA                  ; 12.20 mA                         ;
+; VCCIO          ; 5.90 mA                 ; 1.04 mA                   ; 4.86 mA                  ; 5.90 mA                          ;
+; VCCA           ; 20.99 mA                ; 0.00 mA                   ; 20.99 mA                 ; 20.99 mA                         ;
+; VCCD_PLL       ; 7.81 mA                 ; 0.00 mA                   ; 7.81 mA                  ; 7.81 mA                          ;
+; VCCINT         ; 0.15 mA                 ; 0.00 mA                   ; 0.15 mA                  ; 0.15 mA                          ;
+; VCCA_ADC       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; 2.5V          ; 0.51 mA             ; 0.01 mA               ; 0.50 mA              ;
+; 1B       ; 2.5V          ; 0.52 mA             ; 0.00 mA               ; 0.52 mA              ;
+; 2        ; 2.5V          ; 0.66 mA             ; 0.10 mA               ; 0.56 mA              ;
+; 3        ; 2.5V          ; 0.56 mA             ; 0.00 mA               ; 0.56 mA              ;
+; 4        ; 2.5V          ; 0.53 mA             ; 0.00 mA               ; 0.53 mA              ;
+; 5        ; 2.5V          ; 0.57 mA             ; 0.00 mA               ; 0.57 mA              ;
+; 6        ; 2.5V          ; 0.76 mA             ; 0.24 mA               ; 0.53 mA              ;
+; 7        ; 2.5V          ; 1.22 mA             ; 0.66 mA               ; 0.56 mA              ;
+; 8        ; 2.5V          ; 0.58 mA             ; 0.04 mA               ; 0.54 mA              ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 5.90 mA                 ; 1.04 mA                   ; 4.86 mA                  ; 5.90 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                       ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Data Source                                                                            ; Total       ; Pin        ; Registered  ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Simulation (from file)                                                                 ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Node, entity or clock assignment                                                       ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 2 (0.4%)    ; 1 (0.7%)   ; 0 (0.0%)    ; 1 (0.4%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 2 (0.4%)    ; 1 (0.7%)   ; 0 (0.0%)    ; 1 (0.4%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Vectorless estimation                                                                  ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 350 (77.6%) ; 50 (33.3%) ; 37 (100.0%) ; 263 (99.6%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 216 (47.9%) ; 34 (22.7%) ; 0 (0.0%)    ; 182 (68.9%)   ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 350 (77.6%) ; 50 (33.3%) ; 37 (100.0%) ; 263 (99.6%)   ;
+;                                                                                        ;             ;            ;             ;               ;
+; Default assignment                                                                     ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 27 (6.0%)   ; 27 (18.0%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 99 (22.0%)  ; 99 (66.0%) ; 0 (0.0%)    ; 0 (0.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Assumed 0                                                                              ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 72 (16.0%)  ; 72 (48.0%) ; 0 (0.0%)    ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                           ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source ; Static Probability ; Static Probability Data Source ;
++--------+------+---------------------------------------------+-------------------------+--------------------+--------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-----------------------------------+
+; PowerPlay Power Analyzer Messages ;
++-----------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime PowerPlay Power Analyzer
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Mon Jul 29 09:59:26 2024
+Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off pipemult -c pipemult2
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'pipemult2.sdc'
+Info (332104): Reading SDC File: 'pipemult.sdc'
+Warning (332043): Overwriting existing clock: clk1
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(4): Set_input_delay/set_output_delay has replaced one or more delays on port "wren". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 4
+    Info (332050): set_input_delay -clock vir_clock -max 2.0 [get_ports wren] File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 4
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[7]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+    Info (332050): set_input_delay -clock vir_clock -max 2.0 [get_ports data*] File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "datab[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[7]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(6): Set_input_delay/set_output_delay has replaced one or more delays on port "dataa[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 6
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(8): Set_input_delay/set_output_delay has replaced one or more delays on port "rdaddress[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+    Info (332050): set_input_delay -clock vir_clock -max 2.0 [get_ports rdaddress*] File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(8): Set_input_delay/set_output_delay has replaced one or more delays on port "rdaddress[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(8): Set_input_delay/set_output_delay has replaced one or more delays on port "rdaddress[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(8): Set_input_delay/set_output_delay has replaced one or more delays on port "rdaddress[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(8): Set_input_delay/set_output_delay has replaced one or more delays on port "rdaddress[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 8
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(10): Set_input_delay/set_output_delay has replaced one or more delays on port "wraddress[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+    Info (332050): set_input_delay -clock vir_clock -max 2.0 [get_ports wraddress*] File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(10): Set_input_delay/set_output_delay has replaced one or more delays on port "wraddress[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(10): Set_input_delay/set_output_delay has replaced one or more delays on port "wraddress[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(10): Set_input_delay/set_output_delay has replaced one or more delays on port "wraddress[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+Warning (332054): Assignment set_input_delay is accepted but has some problems at pipemult.sdc(10): Set_input_delay/set_output_delay has replaced one or more delays on port "wraddress[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 10
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[0]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+    Info (332050): set_output_delay -clock vir_clock -max 0 [get_ports q*] File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[1]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[2]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[3]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[4]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[5]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[6]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[7]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[8]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[9]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[10]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[11]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[12]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[13]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[14]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Warning (332054): Assignment set_output_delay is accepted but has some problems at pipemult.sdc(12): Set_input_delay/set_output_delay has replaced one or more delays on port "q[15]". Please use -add_delay option if you meant to add additional constraints. File: C:/AlteraPrj/pipemultQP16_1Timing2 (1)/pipemultQP16_1/Schematic/pipemult.sdc Line: 12
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Warning (334000): Timing characteristics of device 10M08DAF484C8GES are preliminary
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 8.969 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 83.43 mW
+Info: Quartus Prime PowerPlay Power Analyzer was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 4871 megabytes
+    Info: Processing ended: Mon Jul 29 09:59:28 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+
